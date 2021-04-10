@@ -1,5 +1,6 @@
 .logo{
   
+  
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -168,7 +169,7 @@
   }
 
   .pic1{
-    
+    border: 1px solid black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -192,10 +193,10 @@
 
   .img1{
     border-radius: 20px;
-    height: 230px;
+    height: 190px;
     display: flex;
     padding: 4px;
-    padding-bottom: 100px;
+    padding-bottom: 100px 0 0 0;
     background-color: rgb(235, 235, 247);
     flex-direction: column;
     align-content: stretch;
@@ -207,10 +208,8 @@
     display:flex;
     height: 100px;
     width: 300px;
-    flex-direction: column;
-    
-    
-     
+    flex-direction:column;
+      
   }
 
   .star{
@@ -218,8 +217,6 @@
   }
 
   img{
-    width: 300px;
-    height: 200px;
     border-radius: 15px;
   }
   
