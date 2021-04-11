@@ -17,6 +17,7 @@
 .search {
     position: relative;
     display: flex;
+    
   }
 
   .map-marker{
@@ -69,7 +70,7 @@
   }
 
   .searchTerm2 {
-    width: 125px;
+    width: 120px;
     text-align: center;
     border: 1px solid #b1b8b9;
     padding: 8px;
@@ -115,6 +116,7 @@
   }
 
   .wrap{
+    border: 1px black solid;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -145,9 +147,9 @@
 
   .column1 {
     float: left;
-    width: 60%;
+    width: 65%;
     padding: 10px;
-    height:600px;
+    height:685px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -161,27 +163,37 @@
     border-radius: 30px;
     
     
+    
   }
 
   .row {
     display: flex;
     clear: both;
+    border: 1px solid green;
+    justify-content: space-between;
+
     
     
     
   }
 
   .pic1{
+    border: 1px red solid;
+    height: 545px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    padding: 10px;
+    
     
     
 
   }
 
   .pic2{
+    height: 600px;
      margin: 50px;
     border: 2px solid black;
     display: flex;
@@ -225,6 +237,8 @@
     width:400px;
     background-color: white;
     display: flex;
+   border-radius: 15px;
+
     
     
     
@@ -237,6 +251,40 @@
     
     
     
+    
+  }
+
+
+
+  .column3{
+    background-color: rgb(59, 58, 45);
+    height: 600px;
+    width: 100%;
+  }
+
+  .activ_img{
+    border: lavender 5px solid;
+    height: 685px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+
+  .first{
+    border: 1px solid rgb(159, 161, 159);
+    height: 640px;
+    border-radius: 15px;
+    
+
+  }
+
+  .footer{
+    height: 500px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     
   }
   
