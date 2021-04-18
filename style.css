@@ -13,6 +13,19 @@ h2{
 }
 
 
+.imgc1{
+  border-radius: 15px;
+}
+
+.imgc2{
+  border-radius: 15px 0px 0px 15px;
+}
+
+.imgc3{
+  border-radius: 15px 15px 0px 0px;
+}
+
+
 
 
 
@@ -169,7 +182,7 @@ h2{
 
   .column1 {
     float: left;
-    width: 65%;
+    width: 60%;
     padding: 10px;
     height:720px;
     border-radius: 30px;
@@ -182,8 +195,8 @@ h2{
     width: 30%;
     height: 740px;
     border-radius: 30px;
-    
-    
+    margin-right: 3%;
+
     
   }
 
@@ -203,12 +216,8 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    
     padding: 10px;
-    
-    
-    
-
+  
   }
 
   .pic2{
@@ -251,9 +260,7 @@ h2{
     color: #0065FC;
   }
 
-  img{
-    border-radius: 15px ;
-  }
+  
 
   .imgp{
     width:400px;
@@ -262,7 +269,7 @@ h2{
    padding: 4px;
    border-radius: 7px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+   
     
     
     
@@ -290,23 +297,29 @@ h2{
     "one one two two four four five five"
     "one one three three four four six six"
     "one one three three four four six six";
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 150px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
       
   }
   .one{
     grid-area: one;
-    border-bottom: rgb(243, 248, 237) 55px outset;
+    border-bottom: rgba(245, 247, 244, 0.966) 55px ;
     width: 400px;
     border-radius: 15px;
-    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     object-fit: fill;
+    
+    
     
   
   }
   .two{
     grid-area: two;
+    border-bottom: rgba(245, 247, 244, 0.966) 55px ;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: fill;
   }
   .three{
     grid-area: three;
