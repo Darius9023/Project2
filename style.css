@@ -22,7 +22,8 @@ h2{
 }
 
 .imgc3{
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 10px 0px 0px;
+  
 }
 
 
@@ -267,7 +268,7 @@ h2{
     background-color: white;
     display: flex;
    padding: 4px;
-   border-radius: 7px;
+   border-radius: 15px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
     
@@ -297,8 +298,8 @@ h2{
     "one one two two four four five five"
     "one one three three four four six six"
     "one one three three four four six six";
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 150px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 28% 20% 28% 24% ;
       
   }
   .one{
@@ -316,22 +317,45 @@ h2{
   .two{
     grid-area: two;
     border-bottom: rgba(245, 247, 244, 0.966) 55px ;
-    width: 400px;
+    
+    width: 350px;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     object-fit: fill;
   }
   .three{
     grid-area: three;
+    border-bottom: rgba(245, 247, 244, 0.966) 20px ;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: fill;
   }
   .four{
     grid-area: four;
+    border-bottom: rgba(245, 247, 244, 0.966) 55px ;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: fill;
   }
   .five{
     grid-area: five;
+    border-bottom: rgba(245, 247, 244, 0.966) 55px ;
+    
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: fill;
   }
   .six{
     grid-area: six;
+    border-bottom: rgba(245, 247, 244, 0.966) 55px ;
+    
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: fill;
   }
 
 
@@ -347,6 +371,12 @@ h2{
     ;
     
      
+  }
+
+
+  .activ_img{
+border:black solid 1px;
+
   }
   
  
