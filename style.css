@@ -12,6 +12,10 @@ h2{
   font-family: raleway;
 }
 
+a{
+  font-family: raleway; 
+}
+
 
 .imgc1{
   border-radius: 15px;
@@ -47,7 +51,7 @@ h2{
 
 
 .search {
-    position: relative;
+  position: relative;
     display: flex;
     
   }
@@ -64,11 +68,9 @@ h2{
   
   .searchTerm {
     width: 200px;
-    border: 1px solid #b1b8b9;
     padding: 8px;
     height: 20px;
-    border-radius: 0 0 0 0;
-    color: #b1b8b9;
+    color: #9b9fa0;
   }
   
   
@@ -106,9 +108,9 @@ h2{
   .searchTerm2 {
     width: 120px;
     text-align: center;
-    border: 2px solid #b1b8b9;
-    padding: 8px;
-    height: 19px;
+    border: 1px solid #b1b8b9;
+    padding: 7px;
+    height: 16px;
     border-radius: 20px 15px 15px  20px;
     color: #b1b8b9;
     display: flex;
@@ -252,6 +254,7 @@ h2{
     height: 80px;
     width: 250px;
     flex-flow: column wrap;
+    line-height: 7px;
     
     
       
@@ -276,12 +279,6 @@ h2{
     
   }
 
-  .img-t{ 
-    
-    
-    
-  }
-
 
 
   .column3{
@@ -300,6 +297,7 @@ h2{
     "one one three three four four six six";
     grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 28% 20% 28% 24% ;
+    grid-gap: 30px;
       
   }
   .one{
@@ -317,11 +315,10 @@ h2{
   .two{
     grid-area: two;
     border-bottom: rgba(245, 247, 244, 0.966) 55px ;
-    
     width: 350px;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    object-fit: fill;
+    
   }
   .three{
     grid-area: three;
