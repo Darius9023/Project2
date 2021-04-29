@@ -4,11 +4,17 @@
 }
 p{
   font-family: raleway;
+  margin-left: 15px;
 }
 h3{
   font-family: raleway;
+  margin-left: 15px;
 }
 h2{
+  font-family: raleway;
+}
+
+h1{
   font-family: raleway;
 }
 
@@ -17,16 +23,28 @@ a{
 }
 
 
+.upper-txt{
+  margin: -15px;
+}
+
+
 .imgc1{
   border-radius: 15px;
+  object-fit: cover;
+  
 }
+
 
 .imgc2{
   border-radius: 15px 0px 0px 15px;
+  object-fit: cover;
 }
 
 .imgc3{
   border-radius: 15px 10px 0px 0px;
+  object-fit: cover;
+  
+  
   
 }
 
@@ -40,26 +58,33 @@ a{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    justify-items: flex-end;  
+    justify-items: flex-end;
+
 }
 
 .item{
     width: 140px;
     display: flex;
     justify-content:center;
+    color: #0065FC;
 }
 
 
 .search {
-  position: relative;
     display: flex;
-    
+    margin: 30px;
+       
   }
+
+  .search1 {
+    display: flex;
+    margin: 30px;
+    }
 
   .map-marker{
       background-color: rgba(68, 65, 68, 0.133);
       width: 40px;
-      height: 39px;
+      height: 38px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -68,10 +93,14 @@ a{
   
   .searchTerm {
     width: 200px;
-    padding: 8px;
-    height: 20px;
-    color: #9b9fa0;
+    border: rgb(194, 191, 191) 0.5px solid;
+    height: 34px;
+    color: #c3c3c4;
+    
   }
+
+  
+
   
   
   
@@ -80,15 +109,34 @@ a{
     background-color: #0065FC;
     color: rgb(248, 248, 252);
     width: 82px;
-    height: 39px;
+    height: 40px;
     text-align: center;
     border-radius: 0 10px 10px 0;
     font-size: 30px;
+    border: rgb(250, 249, 249) 1px solid;
+    margin: -1px;
   }
   .word{
       font-size: 20px;
       
   }
+
+  
+   
+   
+  
+
+  .fa-customize{
+    font-size: 25px;
+  }
+
+  .far-star{
+    color: #cfcccc;
+    
+  }
+
+
+ 
 
 
   .money-bill{
@@ -101,20 +149,26 @@ a{
     align-items: center;
     border-radius: 20px; 
     position: absolute;
+    margin: -2px;
     
       
   }
 
   .searchTerm2 {
-    width: 120px;
+    width: 190px;
     text-align: center;
-    border: 1px solid #b1b8b9;
+    border: #cecccc 1px solid ;
     padding: 7px;
     height: 16px;
     border-radius: 20px 15px 15px  20px;
     color: #b1b8b9;
     display: flex;
-    justify-content: flex-end;
+    align-content: center;
+    font-size:18px ;
+    
+    
+    
+    
   }
 
 
@@ -127,7 +181,8 @@ a{
     justify-content: center;
     align-items: center;
     border-radius: 20px; 
-    position: absolute;     
+    position: absolute; 
+    margin: -2px;    
   }
 
   .hart{
@@ -140,6 +195,7 @@ a{
     align-items: center;
     border-radius: 20px; 
     position: absolute; 
+    margin: -2px;
   }
 
   .dog{
@@ -152,13 +208,15 @@ a{
     align-items: center;
     border-radius: 20px; 
     position: absolute; 
+    margin: -2px;
   }
 
   .wrap{
+    height: 50px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-content: center;
+      align-items: center;
+    
       
   }
 
@@ -173,8 +231,8 @@ a{
     color: #0065FC;
     border: 1px solid grey;
     border-radius: 15px 15px 15px 15px ;
-    width: 35px;
-    height: 25px;
+    width: 37px;
+    height: 24px;
     text-align: center;
     align-content: center;
     margin-top: 15px;
@@ -191,6 +249,8 @@ a{
     border-radius: 30px;
     display: flex;
     flex-direction: column;
+   background-color: #F0F0F0
+   ;
   }
 
   .column2 {
@@ -199,6 +259,7 @@ a{
     height: 740px;
     border-radius: 30px;
     margin-right: 3%;
+    background-color: #F0F0F0;
 
     
   }
@@ -249,12 +310,28 @@ a{
 
   }
 
+  h2{
+    margin-left: 20px;
+  }
+
+
+
+  .chard{
+    height: 40px;
+    display: flex;
+    justify-content:space-between;
+    margin: 20px 30px 20px 10px;
+    align-items: center;
+    
+  }
+
   .img-text{
     display:block;
-    height: 80px;
+    height: 65px;
     width: 250px;
     flex-flow: column wrap;
     line-height: 7px;
+
     
     
       
@@ -262,6 +339,7 @@ a{
 
   .star{
     color: #0065FC;
+    margin-left: 15px;
   }
 
   
@@ -284,6 +362,7 @@ a{
   .column3{
     height: 600px;
     width: 100%;
+
   }
 
   .activ_img{
@@ -296,7 +375,7 @@ a{
     "one one three three four four six six"
     "one one three three four four six six";
     grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 28% 20% 28% 24% ;
+    grid-template-rows: 28% 20% 28% 24% 10% 10;
     grid-gap: 30px;
       
   }
@@ -306,7 +385,7 @@ a{
     width: 400px;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    object-fit: fill;
+    object-fit:fill;
     
     
     
@@ -359,7 +438,7 @@ a{
   .footer{
     height: 220px;
     width: 100%;
-    background-color:rgba(68, 65, 68, 0.133);
+    background-color:#F0F0F0;
     display: grid;
     justify-content: space-around;
     align-items: center;
@@ -370,10 +449,11 @@ a{
      
   }
 
+  
 
-  .activ_img{
-border:black solid 1px;
+  
 
-  }
+
+  
   
  
