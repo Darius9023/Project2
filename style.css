@@ -43,24 +43,30 @@ a{
 .imgc3{
   border-radius: 15px 10px 0px 0px;
   object-fit: cover;
-  
-  
-  
 }
-
-
-
-
-
-
 
 .logo{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    justify-items: flex-end;
+    justify-items: flex-end; 
+    
+    }
 
-}
+    .logo1{
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      justify-items: flex-end;
+      }
+
+      .logo2{
+        width: 200px;
+       height: 150px;
+       
+      }
+
+ 
 
 .item{
     width: 140px;
@@ -68,6 +74,7 @@ a{
     justify-content:center;
     color: #0065FC;
 }
+
 
 
 .search {
@@ -198,6 +205,7 @@ a{
     margin: -2px;
   }
 
+
   .dog{
     background-color: #DEEBFF;
     color: #0065FC;
@@ -212,13 +220,18 @@ a{
   }
 
   .wrap{
+    border: khaki 1px solid;
     height: 50px;
       display: flex;
       flex-direction: row;
-      align-items: center;
-    
-      
+      align-items: center;    
   }
+
+  
+    
+    
+
+ 
 
   .info{
     display: flex;
@@ -240,6 +253,12 @@ a{
     padding-top: 7px; 
   }
 
+  .both-columns{
+    border: 1px solid black;
+  }
+
+ 
+
 
   .column1 {
     float: left;
@@ -249,8 +268,7 @@ a{
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-   background-color: #F0F0F0
-   ;
+    background-color: #f0f0f0;
   }
 
   .column2 {
@@ -259,15 +277,14 @@ a{
     height: 740px;
     border-radius: 30px;
     margin-right: 3%;
-    background-color: #F0F0F0;
-
-    
+    background-color: #F0F0F0 ;
   }
 
   .row {
     display: flex;
     clear: both;
     justify-content: space-between;
+    
 
     
     
@@ -362,6 +379,7 @@ a{
   .column3{
     height: 600px;
     width: 100%;
+    margin-bottom: 7%;
 
   }
 
@@ -432,6 +450,7 @@ a{
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     object-fit: fill;
+    
   }
 
 
@@ -443,17 +462,169 @@ a{
     justify-content: space-around;
     align-items: center;
     grid-template-areas: 
-    "about about accom accom assis assis "
-    ;
-    
-     
+    "about about accom accom assis assis ";  
   }
 
   
 
-  
+
+  .active{
+    color: rgb(49, 48, 48);
+    border-top: blue 2px solid;
+    padding-top: 15px;
+  }
+
+  .active2{
+    color: rgb(49, 48, 48);
+    padding-top: 15px;
+    border-top: 2px grey solid;
+  }
 
 
+
+@media  (max-width:764px )  {
+
+  .item:hover{
+    color: rgb(49, 48, 48);
+    border-top: blue 2px solid;
+    padding-bottom: 15px;}
+
+
+    .active{
+      color: rgb(49, 48, 48);
+      border-top: blue 2px solid;
+      
+    }
+  
+    .active2{
+      color: rgb(49, 48, 48);
+      padding-top: 15px;
+      border-bottom: 2px grey solid;
+    }
+
+
+  img{
+    width: 500px;
+    height:200px;
+  }
+  
+  .logo1{ 
+      flex-direction:initial;
+      justify-content: space-around;
+      margin-top: 100px;  
+      position: absolute; 
+  }
+
+  
+  .wrap{
+    border: 1px solid rgb(12, 14, 12);
+    height: 100%;
+    width: 100%;
+    flex-flow: column ;
+    align-items:flex-start; 
+  }
+
+  .column2{
+    
+    width: 100%;
+    height: 100%;
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: flex-start;
+    
+    
   
   
- 
+  }
+
+
+  .column1{
+    float: center;
+    width: 100%;
+    padding: 10px;
+    height:720px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+   
+   
+
+  }
+
+  .column3{
+    height: auto;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    position:relative;
+    bottom: -1650px;
+  }
+
+  .imgc2{
+    position: relative;
+    display: flex;
+    
+  }
+
+  .imgp{
+    border: 1px solid black;
+    height: 140px;
+    padding-right: 20%;
+    padding-bottom: 12%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .img-t{
+    border: solid 1px red;
+   height: 80%;
+   display: flex;
+   flex-direction: column;
+
+  }
+
+  .both-columns{
+    border: 1px solid green;
+    display:flex;
+    flex-direction: column-reverse;  
+    
+  }
+
+
+  .activ_img{
+    margin:15px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+      
+  }
+
+  
+
+  .footer{
+    height: 220px;
+    width: 100%;
+    background-color:#F0F0F0;
+    height: 500px;
+    position: absolute;
+    bottom: -5200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+  }
+
+  .row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column-reverse;
+    position:relative;
+    
+  }
+
+}   
