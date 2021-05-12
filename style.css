@@ -69,6 +69,7 @@ a{
  
 
 .item{
+  
     width: 140px;
     display: flex;
     justify-content:center;
@@ -220,7 +221,6 @@ a{
   }
 
   .wrap{
-    border: khaki 1px solid;
     height: 50px;
       display: flex;
       flex-direction: row;
@@ -253,9 +253,6 @@ a{
     padding-top: 7px; 
   }
 
-  .both-columns{
-    border: 1px solid black;
-  }
 
  
 
@@ -380,6 +377,7 @@ a{
     height: 600px;
     width: 100%;
     margin-bottom: 7%;
+    
 
   }
 
@@ -440,7 +438,7 @@ a{
     width: 350px;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    object-fit: fill;
+    object-fit:fill;
   }
   .six{
     grid-area: six;
@@ -469,37 +467,68 @@ a{
 
 
   .active{
-    color: rgb(49, 48, 48);
-    border-top: blue 2px solid;
-    padding-top: 15px;
+    color: #0065FC;
+    border-top:20px;
+    padding-top: 20px;
   }
 
   .active2{
-    color: rgb(49, 48, 48);
-    padding-top: 15px;
-    border-top: 2px grey solid;
+    color: #0065FC;
+    padding-top:20px;
+    border-top: 20px;
+    
   }
+
+  .active3{
+    color: #0065FC;
+    padding-top:20px;
+    border-top: 20px;
+
+  }
+
+
+@media (min-width:765px) {
+  .item:hover{
+    color: #121310;
+    border-top: blue 2px solid;
+    padding-top: 20px;
+    padding-top: 20px;
+    
+    
+  }
+   }
 
 
 
 @media  (max-width:764px )  {
 
   .item:hover{
-    color: rgb(49, 48, 48);
-    border-top: blue 2px solid;
-    padding-bottom: 15px;}
+    color: rgb(44, 123, 214);
+    border-bottom: blue 2px solid;
+    padding-bottom: 10px;}
 
 
     .active{
       color: rgb(49, 48, 48);
-      border-top: blue 2px solid;
+      border-bottom: 2px #555353 solid;
+      padding-bottom: 15px;
+      width: 200px;
       
     }
   
     .active2{
       color: rgb(49, 48, 48);
-      padding-top: 15px;
-      border-bottom: 2px grey solid;
+      padding-bottom: 15px;
+      border-bottom: 2px #f0f0f0 solid;
+      width: 200px;
+    }
+
+    .active3{
+      color: rgb(11, 113, 247);
+      position: relative;
+      bottom: 50px;
+      right: 80px;
+
     }
 
 
@@ -507,6 +536,13 @@ a{
     width: 500px;
     height:200px;
   }
+
+  .logo2{
+    width: 120px;
+   height: 150px;
+   
+  }
+
   
   .logo1{ 
       flex-direction:initial;
@@ -517,24 +553,33 @@ a{
 
   
   .wrap{
-    border: 1px solid rgb(12, 14, 12);
-    height: 100%;
+    height: 300px;
     width: 100%;
     flex-flow: column ;
     align-items:flex-start; 
+    
+    
   }
+
 
   .column2{
     
     width: 100%;
-    height: 100%;
+    height: 750px;
     background-color: #F0F0F0;
     display: flex;
     align-items: flex-start;
+    border-radius: 0px;
     
+  }
+
+  .pic2{
     
-  
-  
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 200px;
+    top:70px
   }
 
 
@@ -542,11 +587,11 @@ a{
     float: center;
     width: 100%;
     padding: 10px;
-    height:720px;
+    height:0px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    
    
    
 
@@ -558,19 +603,29 @@ a{
     display:flex;
     align-items: center;
     position:relative;
-    bottom: -1650px;
+    bottom: -2450px;
+    
+    
+  }
+
+  .chardi{
+    position: relative;
+    left:340px;
   }
 
   .imgc2{
-    position: relative;
+    width: 200px;
+    height: 180px;
+    position:relative;
+    top: 22px;
     display: flex;
+    
     
   }
 
   .imgp{
-    border: 1px solid black;
     height: 140px;
-    padding-right: 20%;
+    padding-right: 16%;
     padding-bottom: 12%;
     display: flex;
     justify-content: flex-start;
@@ -578,18 +633,27 @@ a{
   }
 
   .img-t{
-    border: solid 1px red;
-   height: 80%;
+    
+   height: 100%;
    display: flex;
    flex-direction: column;
 
   }
 
   .both-columns{
-    border: 1px solid green;
     display:flex;
     flex-direction: column-reverse;  
     
+  }
+
+  .topic3{
+    position: relative;
+    top:2100px;
+  }
+
+  .show{
+    position: relative;
+    top:1370px;
   }
 
 
@@ -609,8 +673,8 @@ a{
     width: 100%;
     background-color:#F0F0F0;
     height: 500px;
-    position: absolute;
-    bottom: -5200px;
+    position: relative;
+    bottom: -3900px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -624,6 +688,64 @@ a{
     align-items: center;
     flex-direction: column-reverse;
     position:relative;
+    
+  }
+
+  .upper-txt{
+    padding-top: 20px;
+  }
+
+  .searchhart{
+    position: relative;
+    left: 250px;
+    bottom: 185px;
+  }
+
+  .searchdog{
+    position: relative;
+    bottom: 100px;
+  }
+
+
+  .one {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+  .two {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+
+  .three {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+
+  .four {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+
+  .five {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+
+  .six {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
   }
 
