@@ -23,6 +23,7 @@ a{
 }
 
 
+
 .upper-txt{
   margin: -15px;
 }
@@ -96,27 +97,27 @@ a{
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 10px 0 0 10px;     
+      border-radius: 10px 0 0 10px;
+      position: relative;  
+        
   }
   
   .searchTerm {
-    width: 200px;
-    border: rgb(194, 191, 191) 0.5px solid;
+    width: 170px;
+    border: rgb(194, 191, 191) 1px solid;
     height: 34px;
-    color: #c3c3c4;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    
+    
     
   }
 
-  
-
-  
-  
-  
-  
   .searchButton {
     background-color: #0065FC;
     color: rgb(248, 248, 252);
-    width: 82px;
+    width: 80px;
     height: 40px;
     text-align: center;
     border-radius: 0 10px 10px 0;
@@ -125,8 +126,17 @@ a{
     margin: -1px;
   }
   .word{
-      font-size: 20px;
-      
+      font-size: 20px;    
+  }
+
+  ::-webkit-input-placeholder {
+    padding-left: 20px;
+    color: black;
+    font-size: large;
+    display: flex;
+    justify-items: flex-end;
+    
+    
   }
 
   
@@ -150,81 +160,85 @@ a{
   .money-bill{
     background-color:  #DEEBFF;
     color: #0065FC;
-    width: 40px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px; 
     position: absolute;
-    margin: -2px;
+    margin: 0px;
     
       
   }
 
   .searchTerm2 {
-    width: 190px;
+    width: 150px;
     text-align: center;
-    border: #cecccc 1px solid ;
+    border: #cecccc 2px solid ;
     padding: 7px;
-    height: 16px;
-    border-radius: 20px 15px 15px  20px;
+    height: 25px;
+    border-radius: 25px 20px 20px  25px;
     color: #b1b8b9;
     display: flex;
     align-content: center;
-    font-size:18px ;
-    
-    
-    
-    
+    font-size:17px ;
+    font-weight: 700;
+      
   }
 
 
   .child{
     background-color: #DEEBFF;
     color: #0065FC;
-    width: 40px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px; 
-    position: absolute; 
-    margin: -2px;    
+    position: relative;
+    left: 20px;
+     
+        
   }
 
   .hart{
     background-color:  #DEEBFF;
     color: #0065FC;
-    width: 40px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px; 
     position: absolute; 
-    margin: -2px;
+   
   }
 
 
   .dog{
     background-color: #DEEBFF;
     color: #0065FC;
-    width: 40px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px; 
-    position: absolute; 
-    margin: -2px;
+    position: relative; 
+    left: 40px;
+    
   }
 
   .wrap{
     height: 50px;
       display: flex;
       flex-direction: row;
-      align-items: center;    
+      align-items: center;
+      padding-bottom: 25px;
+      
+          
   }
 
   
@@ -270,11 +284,12 @@ a{
 
   .column2 {
     float: left;
-    width: 30%;
+    width: 600px;
     height: 740px;
     border-radius: 30px;
     margin-right: 3%;
     background-color: #F0F0F0 ;
+    
   }
 
   .row {
@@ -470,12 +485,14 @@ a{
     color: #0065FC;
     border-top:20px;
     padding-top: 20px;
+    border-top: solid 2px white;
   }
 
   .active2{
     color: #0065FC;
     padding-top:20px;
     border-top: 20px;
+    border-top: solid 2px white;
     
   }
 
@@ -483,24 +500,43 @@ a{
     color: #0065FC;
     padding-top:20px;
     border-top: 20px;
-
+    border-top: solid 2px white;
   }
 
+    
+    
 
-@media (min-width:765px) {
+
+@media (min-width:768px) {
   .item:hover{
     color: #121310;
     border-top: blue 2px solid;
-    padding-top: 20px;
-    padding-top: 20px;
-    
-    
+    padding-top: 20px; 
   }
+
+  .money-bill:hover{
+    color: rgb(233, 50, 50);
+  }
+
+  .child:hover{
+    color: rgb(233, 50, 50);
+  }
+
+  .hart:hover{
+    color: rgb(233, 50, 50);
+  }
+
+  .dog:hover{
+    color: rgb(233, 50, 50);
+  }
+
+
    }
 
 
 
-@media  (max-width:764px )  {
+
+ @media  (max-width:767px )  {
 
   .item:hover{
     color: rgb(44, 123, 214);
@@ -510,7 +546,7 @@ a{
 
     .active{
       color: rgb(49, 48, 48);
-      border-bottom: 2px #555353 solid;
+      border-bottom: 2px #f0f0f0 solid;
       padding-bottom: 15px;
       width: 200px;
       
@@ -555,8 +591,10 @@ a{
   .wrap{
     height: 300px;
     width: 100%;
+    display: flex;
     flex-flow: column ;
     align-items:flex-start; 
+    
     
     
   }
@@ -585,15 +623,9 @@ a{
 
   .column1{
     float: center;
-    width: 100%;
-    padding: 10px;
-    height:0px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    
-   
-   
+    width:94%;
+    height: 1px;
+    border-radius: 0px;
 
   }
 
@@ -670,7 +702,7 @@ a{
 
   .footer{
     height: 220px;
-    width: 100%;
+    width: 550px;
     background-color:#F0F0F0;
     height: 500px;
     position: relative;
@@ -695,15 +727,30 @@ a{
     padding-top: 20px;
   }
 
+  .searchmoneybill{
+    position: relative;
+    left: 15px;
+
+  }
+
+  .searchchild{
+    position: relative;
+    right: 40px;
+    
+    
+    
+  }
+
   .searchhart{
     position: relative;
-    left: 250px;
-    bottom: 185px;
+    left: 180px;
+    bottom: 178px;
   }
 
   .searchdog{
     position: relative;
-    bottom: 100px;
+    bottom: 120px;
+    right: 60px;
   }
 
 
@@ -747,6 +794,23 @@ a{
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
+  }
+
+
+  .money-bill:hover{
+    color: rgb(233, 50, 50);
+  }
+
+  .child:hover{
+    color: rgb(233, 50, 50);
+  }
+
+  .hart:hover{
+    color: rgb(233, 50, 50);
+  }
+
+  .dog:hover{
+    color: rgb(233, 50, 50);
   }
 
 }   
