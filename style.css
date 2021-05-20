@@ -198,7 +198,7 @@ a{
     align-items: center;
     border-radius: 20px; 
     position: relative;
-    left: 20px;
+    left: 30px;
      
         
   }
@@ -531,6 +531,7 @@ a{
   }
 
 
+
    }
 
 
@@ -735,7 +736,7 @@ a{
 
   .searchchild{
     position: relative;
-    right: 40px;
+    right:50px;
     
     
     
@@ -813,4 +814,16 @@ a{
     color: rgb(233, 50, 50);
   }
 
-}   
+ 
+.searchButton {
+  background-color: #0065FC;
+  color: rgb(248, 248, 252);
+  width: 45px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative; 
+  right: 5px; 
+}
+    
+}
