@@ -27,12 +27,9 @@ a{
 .upper-txt{
   margin: -15px;
 }
-
-
 .imgc1{
   border-radius: 15px;
   object-fit: cover;
-  
 }
 
 
@@ -69,7 +66,7 @@ a{
 
  
 
-.item{
+.logo1 li {
   
     width: 140px;
     display: flex;
@@ -121,12 +118,12 @@ a{
     height: 40px;
     text-align: center;
     border-radius: 0 10px 10px 0;
-    font-size: 30px;
+    /* font-size: 30px; */
     border: rgb(250, 249, 249) 1px solid;
     margin: -1px;
   }
-  .word{
-      font-size: 20px;    
+  .searchButton i {
+    display: none ;
   }
 
   ::-webkit-input-placeholder {
@@ -508,7 +505,7 @@ a{
 
 
 @media (min-width:768px) {
-  .item:hover{
+  .logo1 li:hover{
     color: #121310;
     border-top: blue 2px solid;
     padding-top: 20px; 
@@ -533,13 +530,17 @@ a{
 
 
    }
-
-
-
+ 
 
  @media  (max-width:767px )  {
+   .searchButton span{
+     display: none;
+   }
+   .searchButton i {
+    display: block !important ;
+  }
 
-  .item:hover{
+  .logo1 li:hover{
     color: rgb(44, 123, 214);
     border-bottom: blue 2px solid;
     padding-bottom: 10px;}
@@ -818,12 +819,15 @@ a{
 .searchButton {
   background-color: #0065FC;
   color: rgb(248, 248, 252);
-  width: 45px;
+  width: 42px;
   height: 40px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 12px;
   position: relative; 
   right: 5px; 
+  
 }
+
+
     
 }
