@@ -413,6 +413,10 @@ h2 {
     border-top: solid 2px white;
 }
 
+a {
+    cursor: pointer;
+}
+
 @media (min-width:768px) {
     .logo1 li:hover {
         color: #121310;
@@ -646,5 +650,8 @@ h2 {
         border-radius: 12px;
         position: relative;
         right: 5px;
+    }
+    a {
+        cursor: pointer;
     }
 }
